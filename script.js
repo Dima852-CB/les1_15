@@ -13,3 +13,5 @@ console.log(testPrompt);
 setTimeout(() => {
   document.write(testPrompt);
 }, 3000);
+
+let s1s;
