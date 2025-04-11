@@ -15,3 +15,5 @@ setTimeout(() => {
 }, 3000);
 
 const konstanta = 12;
+
+let val = 666;
