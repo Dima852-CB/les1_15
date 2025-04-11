@@ -1,19 +1,19 @@
-console.log('d' * 3);
+let numberOfFilms = Number(prompt('Сколько фильмов посмотрели?', ''));
 
-alert('DH852');
+const personalMovieDB = {
+  count: numberOfFilms,
+  movies: {},
+  actors: {},
+  genres: [],
+  privat: false,
+};
 
-const testConfirm = confirm('Are ?');
+const favouriteFilm1 = prompt('Любимый фильм?');
+const rating1 = prompt('Оценка?');
+const favouriteFilm2 = prompt('Любимый фильм?');
+const rating2 = prompt('Оценка?');
 
-console.log(testConfirm);
+personalMovieDB.movies[favouriteFilm1] = rating1;
+personalMovieDB.movies[favouriteFilm2] = rating2;
 
-const testPrompt = prompt('Ar ar?', 'ar ar');
-
-console.log(testPrompt);
-
-setTimeout(() => {
-  document.write(testPrompt);
-}, 3000);
-
-const konstanta = 12;
-
-let val = 666;
+console.log(personalMovieDB);
